@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class LaneMovement : MonoBehaviour
+public class PlayerAutoRunner : MonoBehaviour
 {
     public float laneDistance = 2.0f; // khoảng cách giữa các làn
     public float forwardSpeed = 5.0f;
@@ -8,12 +8,6 @@ public class LaneMovement : MonoBehaviour
 
     private int currentLane = 1; // 0: trái, 1: giữa, 2: phải
     private Vector3 targetPosition;
-
-    public float jumpForce = 7f;
-    public float gravity = 20f;
-
-    private float verticalVelocity = 0f;
-    private bool isGrounded = true;
     public float laneEpsilon = 0.5f;
 
     void Start()
@@ -26,16 +20,15 @@ public class LaneMovement : MonoBehaviour
         HandleInput();
         MoveForward();
         MoveToLane();
-        HandleJump();
     }
 
     void HandleInput()
     {
-        if (Input.GetKeyDown(KeyCode.LeftArrow) && currentLane > 0)
+        if (Input.GetKeyDown(KeyCode.A) && currentLane > 0)
         {
             currentLane--;
         }
-        else if (Input.GetKeyDown(KeyCode.RightArrow) && currentLane < 2)
+        else if (Input.GetKeyDown(KeyCode.D) && currentLane < 2)
         {
             currentLane++;
         }
@@ -69,39 +62,13 @@ public class LaneMovement : MonoBehaviour
 
     void CheckAndContinueMove()
     {
-        if (Input.GetKey(KeyCode.RightArrow) && currentLane < 2)
+        if (Input.GetKey(KeyCode.D) && currentLane < 2)
         {
             currentLane++;
         }
-        else if (Input.GetKey(KeyCode.LeftArrow) && currentLane > 0)
+        else if (Input.GetKey(KeyCode.A) && currentLane > 0)
         {
             currentLane--;
-        }
-    }
-    
-    void HandleJump()
-    {
-        if (isGrounded && Input.GetKeyDown(KeyCode.Space))
-        {
-            verticalVelocity = jumpForce;
-            isGrounded = false;
-        }
-
-        if (!isGrounded)
-        {
-            verticalVelocity -= gravity * Time.deltaTime;
-            transform.Translate(Vector3.up * verticalVelocity * Time.deltaTime);
-
-            // Hạ xuống và chạm đất
-            if (transform.position.y <= 0f)
-            {
-                Vector3 pos = transform.position;
-                pos.y = 0f;
-                transform.position = pos;
-
-                verticalVelocity = 0f;
-                isGrounded = true;
-            }
         }
     }
 }
