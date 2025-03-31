@@ -16,16 +16,34 @@ public class PlayerJumpController : MonoBehaviour
     void Update()
     {
         isGrounded = groundChecker.IsGroundedByY(transform);
+        checkSpaceJump();
         HandleJump();
+    }
+    public void TryJump()
+    {
+        if (isGrounded)
+        {
+            PeformJump();
+        }
+        HandleJump();
+    }
+
+    void checkSpaceJump()
+    {
+        if (isGrounded && Input.GetKeyDown(KeyCode.Space))
+        {
+            PeformJump();
+        }
+    }
+    private void PeformJump()
+    {
+        verticalVelocity = jumpForce;
+        isGrounded = false;
     }
 
     void HandleJump()
     {
-        if (isGrounded && Input.GetKeyDown(KeyCode.Space))
-        {
-            verticalVelocity = jumpForce;
-            isGrounded = false;
-        }
+        
 
         if (!isGrounded)
         {

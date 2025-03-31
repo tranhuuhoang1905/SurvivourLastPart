@@ -7,12 +7,10 @@ public class PlayerAutoRunner : MonoBehaviour
     public float laneChangeSpeed = 10.0f;
 
     private int currentLane = 1; // 0: trái, 1: giữa, 2: phải
-    private Vector3 targetPosition;
     public float laneEpsilon = 0.5f;
 
     void Start()
     {
-        targetPosition = transform.position;
     }
 
     void Update()
