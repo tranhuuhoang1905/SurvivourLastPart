@@ -1,72 +1,85 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
 public class PlayerAutoRunner : MonoBehaviour
 {
-    public float laneDistance = 2.0f; // khoảng cách giữa các làn
     public float forwardSpeed = 5.0f;
-    public float laneChangeSpeed = 10.0f;
+    public float horizontalSpeed = 5.0f;
+    public float xLimit = 4.0f;
+    private bool isDead = false; // Thêm biến trạng thái
+    private Animator animator;
 
-    private int currentLane = 1; // 0: trái, 1: giữa, 2: phải
-    public float laneEpsilon = 0.5f;
+    private Rigidbody rb;
+    private Vector3 forwardVelocity;
 
-    void Start()
+    private void OnEnable()
     {
+        GameEvents.OnFinalGame += FinalGame;
     }
 
-    void Update()
+    private void OnDisable()
     {
-        HandleInput();
+        GameEvents.OnFinalGame -= FinalGame;
+    }
+
+    void Awake()
+    {
+        rb = GetComponent<Rigidbody>();
+        rb.constraints = RigidbodyConstraints.FreezeRotation; // Không cho xoay
+        animator = GetComponent<Animator>();
+    }
+
+    void FixedUpdate()
+    {
         MoveForward();
-        MoveToLane();
-    }
-
-    void HandleInput()
-    {
-        if (Input.GetKeyDown(KeyCode.A) && currentLane > 0)
-        {
-            currentLane--;
-        }
-        else if (Input.GetKeyDown(KeyCode.D) && currentLane < 2)
-        {
-            currentLane++;
-        }
+        HandleHorizontalInput();
     }
 
     void MoveForward()
     {
-        transform.Translate(Vector3.forward * forwardSpeed * Time.deltaTime);
+        forwardVelocity = Vector3.forward * forwardSpeed;
     }
 
-    void MoveToLane()
+    void HandleHorizontalInput()
     {
-        float targetX = (currentLane - 1) * laneDistance;
-        float currentY = transform.position.y;
-        float currentZ = transform.position.z;
+        if (isDead) return ;
+        float horizontalInput = 0f;
 
-        Vector3 currentPos = transform.position;
-        Vector3 targetPos = new Vector3(targetX, currentY, currentZ);
+        if (Input.GetKey(KeyCode.A))
+        {
+            horizontalInput = -1f;
+        }
+        else if (Input.GetKey(KeyCode.D))
+        {
+            horizontalInput = 1f;
+        }
 
-        // Chỉ thay đổi trục X (giữ nguyên Y và Z)
-        Vector3 newPosition = Vector3.MoveTowards(currentPos, targetPos, laneChangeSpeed * Time.deltaTime);
-        transform.position = new Vector3(newPosition.x, currentPos.y, newPosition.z);
+        Vector3 horizontalMove = Vector3.right * horizontalInput * horizontalSpeed;
 
-        // Khi đã gần tới đúng vị trí thì check giữ phím
+        // Tính toán vị trí mới
+        Vector3 move = (forwardVelocity + horizontalMove) * Time.fixedDeltaTime;
+        Vector3 newPosition = rb.position + move;
+
+        // Giới hạn trục X
+        newPosition.x = Mathf.Clamp(newPosition.x, -xLimit, xLimit);
+
+        rb.MovePosition(newPosition);
+    }
+
+    public void FinalGame( bool type)
+    {
         
-        if (Mathf.Abs(transform.position.x) <= laneEpsilon)
+        isDead = true; // Đánh dấu đã chết
+        forwardSpeed = 0f;
+        rb.velocity = Vector3.zero; // Dừng lại lập tức nếu đang có momentum
+        if(type) 
         {
-            CheckAndContinueMove();
+            animator.SetBool("IsWinner", true);
         }
-    }
-
-    void CheckAndContinueMove()
-    {
-        if (Input.GetKey(KeyCode.D) && currentLane < 2)
+        else
         {
-            currentLane++;
-        }
-        else if (Input.GetKey(KeyCode.A) && currentLane > 0)
-        {
-            currentLane--;
+            
+            animator.SetBool("IsLose", true);
         }
     }
 }

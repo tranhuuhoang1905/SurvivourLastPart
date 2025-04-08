@@ -5,6 +5,7 @@ using UnityEngine;
 public class ItemCollectible : MonoBehaviour
 {
     private IScoreService scoreService;
+    [SerializeField] protected int penalty = 1;
 
     private void Start()
     {
@@ -15,7 +16,7 @@ public class ItemCollectible : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            scoreService.AddScore(1);
+            scoreService.AddScore(penalty);
             Destroy(gameObject);
         }
     }

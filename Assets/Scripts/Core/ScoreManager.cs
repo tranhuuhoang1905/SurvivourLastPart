@@ -23,8 +23,20 @@ public class ScoreManager : MonoBehaviour, IScoreService
     public void AddScore(int amount)
     {
         currentScore += amount;
-        Debug.Log($"CurrentScore:{currentScore}");
-        GameEvents.RaisePeachCollected(currentScore);
+
+        if (currentScore<0)
+        {
+            GameEvents.TryKill();
+        }
+        else{
+            GameEvents.RaisePeachCollected(currentScore);
+        }
+        Debug.Log($"check AddScore currentScore {currentScore}");
+    }
+    public int GetScore()
+    {
+        Debug.Log($"check AddScore GetScore {currentScore}");
+        return currentScore;
     }
 }
 

@@ -1,65 +1,81 @@
+using System;
 using UnityEngine;
 
-public class PlayerJumpController : MonoBehaviour
+[RequireComponent(typeof(Rigidbody))]
+public class PlayerJumpController : MonoBehaviour, IJumpable
 {
+    [Header("Jump Settings")]
     public float jumpForce = 7f;
-    public float gravity = 10f;
+    public float groundCheckDistance = 0.2f;
+    public LayerMask groundLayer;
 
-    private float verticalVelocity = 0f;
-    private bool isGrounded = true;
+    private Rigidbody rb;
+    private bool isGrounded;
+    private Animator animator;
+    private bool isDead = false;
     private IGroundChecker groundChecker;
-    
+
     void Start()
     {
-        groundChecker = new GroundByChecker(); // 👈 Khởi tạo class cụ thể
+        groundChecker = new GroundChecker(groundCheckDistance, groundLayer);
     }
-    void Update()
+    private void Awake()
     {
-        isGrounded = groundChecker.IsGroundedByY(transform);
-        checkSpaceJump();
-        HandleJump();
+        rb = GetComponent<Rigidbody>();
+        rb.constraints = RigidbodyConstraints.FreezeRotation;
+        animator = GetComponent<Animator>();
     }
+
+    private void OnEnable()
+    {
+        GameEvents.OnFinalGame += FinalGame;
+    }
+
+    private void OnDisable()
+    {
+        GameEvents.OnFinalGame -= FinalGame;
+    }
+    private void Update()
+    {
+        if (isDead) return;
+
+        bool checkGrounded = groundChecker.IsGrounded(transform);
+        if (checkGrounded != isGrounded)
+        {
+            isGrounded = checkGrounded;
+            animator.SetBool("IsJump", !isGrounded);
+        }
+
+        
+        
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        {
+            PerformJump();
+        }
+    }
+    
+    private void PerformJump()
+    {
+        rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
+        isGrounded = false;
+        // animator.SetBool("IsJump", !isGrounded);
+    }
+
     public void TryJump()
     {
-        if (isGrounded)
-        {
-            PeformJump();
-        }
-        HandleJump();
+        if (isDead || !isGrounded) return;
+        PerformJump();
     }
 
-    void checkSpaceJump()
+    public void FinalGame(bool _type)
     {
-        if (isGrounded && Input.GetKeyDown(KeyCode.Space))
-        {
-            PeformJump();
-        }
+        animator.SetBool("IsJump", false);
+        isDead = true;
+        rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
     }
-    private void PeformJump()
+
+    public void ResumeJump()
     {
-        verticalVelocity = jumpForce;
-        isGrounded = false;
+        isDead = false;
     }
-
-    void HandleJump()
-    {
-        
-
-        if (!isGrounded)
-        {
-            verticalVelocity -= gravity * Time.deltaTime;
-            transform.Translate(Vector3.up * verticalVelocity * Time.deltaTime);
-
-            if (transform.position.y <= 0f)
-            {
-                Vector3 pos = transform.position;
-                pos.y = 0f;
-                transform.position = pos;
-
-                verticalVelocity = 0f;
-                isGrounded = true;
-            }
-        }
-    }
-
 }

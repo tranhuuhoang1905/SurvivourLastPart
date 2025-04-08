@@ -21,7 +21,7 @@ public class ScoreUI : MonoBehaviour
 
     private void HandlePeachCollected(int currentScore)
     {
-        this.currentScore += currentScore;
-        scoreText.text = "Score: " + currentScore;
+        this.currentScore = currentScore;
+        scoreText.text = "Score: " + this.currentScore;
     }
 }

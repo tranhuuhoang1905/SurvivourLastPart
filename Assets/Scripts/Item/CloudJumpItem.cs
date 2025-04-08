@@ -8,7 +8,7 @@ public class CloudJumpItem : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            var jumpController = other.GetComponent<PlayerJumpController>();
+            var jumpController = other.GetComponent<IJumpable>();
             if (jumpController != null)
             {
                 jumpController.TryJump(); // 👈 Gọi trực tiếp nhảy!

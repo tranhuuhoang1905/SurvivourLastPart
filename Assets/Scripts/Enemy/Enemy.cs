@@ -2,7 +2,6 @@ using UnityEngine;
 public class Enemy : EnemyBase
 {
     private IScoreService scoreService;
-
     protected override void Start()
     {
         base.Start();
