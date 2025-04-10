@@ -48,10 +48,10 @@ public class PlayerJumpController : MonoBehaviour, IJumpable
 
         
         
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
-        {
-            PerformJump();
-        }
+        // if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        // {
+        //     PerformJump();
+        // }
     }
     
     private void PerformJump()
