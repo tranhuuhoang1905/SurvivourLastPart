@@ -5,6 +5,8 @@ public abstract class EnemyBase : MonoBehaviour
 {
     [SerializeField] protected int penalty = -1;
     public TextMeshProUGUI scoreText;
+    // private bool isMovingUp = false;
+    
 
     protected virtual void Start()
     {
@@ -29,10 +31,26 @@ public abstract class EnemyBase : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            OnPlayerHit(other.gameObject);
-            Destroy(gameObject);
+            HandleTriggerEnter(other.gameObject);
+            // OnPlayerHit(other.gameObject);
+            
+            // isMovingUp = true;
+            // StartCoroutine(DestroyAfterDelay(1f));
+            // Destroy(gameObject);
         }
     }
+    protected virtual void HandleTriggerEnter(GameObject player)
+{
+    OnPlayerHit(player);
+    BeginFloatingAndDestroy();
+}
+
+    // private IEnumerator DestroyAfterDelay(float delay)
+    // {
+    //     yield return new WaitForSeconds(delay);
+    //     Destroy(gameObject);
+    // }
 
     protected abstract void OnPlayerHit(GameObject player);
+    protected abstract void BeginFloatingAndDestroy();
 }
