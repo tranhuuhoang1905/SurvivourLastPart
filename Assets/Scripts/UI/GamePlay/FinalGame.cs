@@ -1,5 +1,8 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
+
+using System.Collections;
 
 public class FinalGame : MonoBehaviour
 {
@@ -7,6 +10,8 @@ public class FinalGame : MonoBehaviour
     
     private TextMeshProUGUI textFinal;
     public GameObject panel;
+    public GameObject WinImage;
+    public GameObject LoseImage;
 
     private void OnEnable()
     {
@@ -32,17 +37,33 @@ public class FinalGame : MonoBehaviour
 
     private void FinalGameHandle(bool type)
     {
-
+        StartCoroutine(FinalGameAction(type));
         
+        
+    }
+
+    private IEnumerator FinalGameAction(bool type)
+    {
+        yield return new WaitForSeconds(2f);
         if (type)
         {
-            textFinal.text = "Win Game";
-            textFinal.color = Color.green;
+            WinImage.SetActive(true);
+            // textFinal.text = "Win Game";
+            // textFinal.color = Color.green;
         }
         else{
-            textFinal.text = "Game Over";
-            textFinal.color = Color.red;
+            
+            LoseImage.SetActive(true);
+            // textFinal.text = "Game Over";
+            // textFinal.color = Color.red;
         }
         panel.SetActive(true);
     }
+
+    public void OnExitButtonReStartGame()
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.buildIndex);
+    }
+    
 }
