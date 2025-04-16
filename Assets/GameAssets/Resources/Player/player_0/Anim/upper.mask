@@ -1,0 +1,212 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: upper
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: p_m_1
+    m_Weight: 1
+  - m_Path: p_m_1/Dummyqunbai
+    m_Weight: 1
+  - m_Path: p_m_1/Dummyqunbai/Cloth_Qb001
+    m_Weight: 1
+  - m_Path: p_m_1/Dummyqunbai/Cloth_Qb001/Cloth_Qb002
+    m_Weight: 1
+  - m_Path: p_m_1/Dummyqunbai/Cloth_Qb001/Cloth_Qb002/Cloth_Qb003
+    m_Weight: 1
+  - m_Path: p_m_1/Dummyqunbai/Cloth_Qb001/Cloth_Qb002/Cloth_Qb003/Cloth_Qb004
+    m_Weight: 1
+  - m_Path: p_m_1/Dummyqunbai/Cloth_Qb001/Cloth_Qb002/Cloth_Qb003/Cloth_Qb004/Bone015
+    m_Weight: 1
+  - m_Path: p_m_1/Dummyqunbai/Cloth_Qb201
+    m_Weight: 1
+  - m_Path: p_m_1/Dummyqunbai/Cloth_Qb201/Cloth_Qb202
+    m_Weight: 1
+  - m_Path: p_m_1/Dummyqunbai/Cloth_Qb201/Cloth_Qb202/Cloth_Qb203
+    m_Weight: 1
+  - m_Path: p_m_1/Dummyqunbai/Cloth_Qb201/Cloth_Qb202/Cloth_Qb203/Cloth_Qb204
+    m_Weight: 1
+  - m_Path: p_m_1/Dummyqunbai/Cloth_Qb201/Cloth_Qb202/Cloth_Qb203/Cloth_Qb204/Bone005(mirrored)
+    m_Weight: 1
+  - m_Path: p_m_1/Dummyqunbai/Cloth_Qb301
+    m_Weight: 1
+  - m_Path: p_m_1/Dummyqunbai/Cloth_Qb301/Cloth_Qb302
+    m_Weight: 1
+  - m_Path: p_m_1/Dummyqunbai/Cloth_Qb301/Cloth_Qb302/Cloth_Qb303
+    m_Weight: 1
+  - m_Path: p_m_1/Dummyqunbai/Cloth_Qb301/Cloth_Qb302/Cloth_Qb303/Cloth_Qb304
+    m_Weight: 1
+  - m_Path: p_m_1/Dummyqunbai/Cloth_Qb301/Cloth_Qb302/Cloth_Qb303/Cloth_Qb304/Bone010
+    m_Weight: 1
+  - m_Path: p_m_1/Dummyqunbai/Cloth_Qb401
+    m_Weight: 1
+  - m_Path: p_m_1/Dummyqunbai/Cloth_Qb401/Cloth_Qb402
+    m_Weight: 1
+  - m_Path: p_m_1/Dummyqunbai/Cloth_Qb401/Cloth_Qb402/Cloth_Qb403
+    m_Weight: 1
+  - m_Path: p_m_1/Dummyqunbai/Cloth_Qb401/Cloth_Qb402/Cloth_Qb403/Cloth_Qb404
+    m_Weight: 1
+  - m_Path: p_m_1/Dummyqunbai/Cloth_Qb401/Cloth_Qb402/Cloth_Qb403/Cloth_Qb404/Bone005
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis
+    m_Weight: 0
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1
+    m_Weight: 0
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2
+    m_Weight: 0
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_1_wing
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_1_wing/Bip001 Xtra01Nub
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_claviclel
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_claviclel/Cloth_Pd101
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_claviclel/Cloth_Pd101/Cloth_Pd102
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_claviclel/Cloth_Pd101/Cloth_Pd102/Cloth_Pd103
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_claviclel/Cloth_Pd101/Cloth_Pd102/Cloth_Pd103/Cloth_Pd104
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_claviclel/Cloth_Pd101/Cloth_Pd102/Cloth_Pd103/Cloth_Pd104/Bone030
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_claviclel/p_m_upperarml
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_claviclel/p_m_upperarml/p_m_forearml
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_claviclel/p_m_upperarml/p_m_forearml/p_m_handl
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_claviclel/p_m_upperarml/p_m_forearml/p_m_handl/p_m_1
+      L Finger0
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_claviclel/p_m_upperarml/p_m_forearml/p_m_handl/p_m_1
+      L Finger0/p_m_1 L Finger01
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_claviclel/p_m_upperarml/p_m_forearml/p_m_handl/p_m_1
+      L Finger0/p_m_1 L Finger01/Bip001 L Finger0Nub
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_claviclel/p_m_upperarml/p_m_forearml/p_m_handl/p_m_1
+      L Finger1
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_claviclel/p_m_upperarml/p_m_forearml/p_m_handl/p_m_1
+      L Finger1/p_m_1 L Finger11
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_claviclel/p_m_upperarml/p_m_forearml/p_m_handl/p_m_1
+      L Finger1/p_m_1 L Finger11/Bip001 L Finger1Nub
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_claviclel/p_m_upperarml/p_m_forearml/p_m_handl/p_m_1
+      L Finger2
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_claviclel/p_m_upperarml/p_m_forearml/p_m_handl/p_m_1
+      L Finger2/p_m_1 L Finger21
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_claviclel/p_m_upperarml/p_m_forearml/p_m_handl/p_m_1
+      L Finger2/p_m_1 L Finger21/p_m_1 L Finger2Nub
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_clavicler
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_clavicler/p_m_upperarmr
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_clavicler/p_m_upperarmr/p_m_forearmr
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_clavicler/p_m_upperarmr/p_m_forearmr/p_m_handr
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_clavicler/p_m_upperarmr/p_m_forearmr/p_m_handr/p_m_1
+      R Finger0
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_clavicler/p_m_upperarmr/p_m_forearmr/p_m_handr/p_m_1
+      R Finger0/p_m_1 R Finger01
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_clavicler/p_m_upperarmr/p_m_forearmr/p_m_handr/p_m_1
+      R Finger0/p_m_1 R Finger01/Bip001 R Finger0Nub
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_clavicler/p_m_upperarmr/p_m_forearmr/p_m_handr/p_m_1
+      R Finger1
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_clavicler/p_m_upperarmr/p_m_forearmr/p_m_handr/p_m_1
+      R Finger1/p_m_1 R Finger11
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_clavicler/p_m_upperarmr/p_m_forearmr/p_m_handr/p_m_1
+      R Finger1/p_m_1 R Finger11/Bip001 R Finger1Nub
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_clavicler/p_m_upperarmr/p_m_forearmr/p_m_handr/p_m_1
+      R Finger2
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_clavicler/p_m_upperarmr/p_m_forearmr/p_m_handr/p_m_1
+      R Finger2/p_m_1 R Finger21
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_clavicler/p_m_upperarmr/p_m_forearmr/p_m_handr/p_m_1
+      R Finger2/p_m_1 R Finger21/p_m_1 R Finger2Nub
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_clavicler/p_m_upperarmr/p_m_forearmr/p_m_handr/p_m_PropR
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_clavicler/p_m_upperarmr/p_m_forearmr/p_m_handr/p_m_PropR/WeaponR
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_Head
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_Head/Bip001
+      HeadNub
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_Head/Cloth_Tf001
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_Head/Cloth_Tf001/Cloth_Tf002
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_Head/Cloth_Tf001/Cloth_Tf002/Cloth_Tf003
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_Head/Cloth_Tf001/Cloth_Tf002/Cloth_Tf003/Cloth_Tf004
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_Head/Cloth_Tf001/Cloth_Tf002/Cloth_Tf003/Cloth_Tf004/Bone040
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_Head/Cloth_Tf201
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_Head/Cloth_Tf201/Cloth_Tf202
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_Head/Cloth_Tf201/Cloth_Tf202/Cloth_Tf203
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_Head/Cloth_Tf201/Cloth_Tf202/Cloth_Tf203/Bone049(mirrored)
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_Head/Cloth_Tf301
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_Head/Cloth_Tf301/Cloth_Tf302
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_Head/Cloth_Tf301/Cloth_Tf302/Cloth_Tf303
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/p_m_spine3/p_m_Neck/p_m_Head/Cloth_Tf301/Cloth_Tf302/Cloth_Tf303/Bone049
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_spine2/WeaponSlot
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_thighl
+    m_Weight: 0
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_thighl/p_m_calfl
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_thighl/p_m_calfl/p_m_footl
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_thighl/p_m_calfl/p_m_footl/p_m_toe0l
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_thighl/p_m_calfl/p_m_footl/p_m_toe0l/Bip001
+      L Toe0Nub
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_thighr
+    m_Weight: 0
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_thighr/p_m_calfr
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_thighr/p_m_calfr/p_m_footr
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_thighr/p_m_calfr/p_m_footr/p_m_toe0r
+    m_Weight: 1
+  - m_Path: p_m_1/p_m_pelvis/p_m_spine1/p_m_thighr/p_m_calfr/p_m_footr/p_m_toe0r/Bip001
+      R Toe0Nub
+    m_Weight: 1
+  - m_Path: player_014
+    m_Weight: 1

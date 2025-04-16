@@ -1,0 +1,138 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: EF_wenli_rim_06_tg
+  m_Shader: {fileID: 4800000, guid: ef812db92103511458d9e25cf6409e65, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _XRSWAP_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 2800000, guid: 5d4037b18e811ef40bdc8e9bb8e004f1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _AlphaTex2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BloomTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailTex:
+        m_Texture: {fileID: 2800000, guid: aa1bdb481999d3c4f840e3377fa32f7b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DissolveTex:
+        m_Texture: {fileID: 2800000, guid: 5c7b74c18ef09aa478c713f9f2eefc72, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EnvCube:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _HunHeTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _LutTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: c1a4f04e7c1ae89498f111017ef191df, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex:
+        m_Texture: {fileID: 2800000, guid: e1a0191a467e2354bbc6c8a04d0e9ded, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex2:
+        m_Texture: {fileID: 2800000, guid: a512d12032a85104f9e20677e5449691, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetalTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTex:
+        m_Texture: {fileID: 2800000, guid: 782302253fab33240b5645aa084f8e63, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _All_QuanZhong: 1
+    - _Alpha: 1
+    - _AlphaPower: 0.809
+    - _Alpha_QuanZhong: 4
+    - _BlackcolorSwitch: 0
+    - _BloomFactor: 0
+    - _BrightnessPower: 1
+    - _ClipAmount: 0
+    - _ClipMaxLength: 4
+    - _ColorMultiplier: 1
+    - _ContrastPower: 1
+    - _CtrlTexUseUV2: 0
+    - _Cutoff: 0
+    - _DayNightTimeRatio: 1
+    - _DissolveSoft: 1
+    - _DistortScaleX: 0.338
+    - _DistortScaleY: 0.382
+    - _EdgeWidth: 0.2
+    - _EmissiveFactor: 1
+    - _EyeAdaptionLevel: 10
+    - _FlowSpeed: 0
+    - _HDRMax: 2
+    - _HDRMin: 0.44
+    - _InvFade: 1
+    - _LunKuo_QuanZhong: 2.5
+    - _Nei_Color_QiangDu: 0.5
+    - _PBR_Roughness: 0.516
+    - _PRB_Metallic: 1
+    - _RimInnerPower: 10
+    - _RimPower: 10
+    - _RimWidth: 0.7
+    - _SaturationPower: 1
+    - _ShadowDepthBias: 0.001
+    - _SquareFactor: 1
+    - _TimeScale: 0.088
+    - _UorV: 0
+    - _UseClip: 0
+    - _UseCustomData: 1
+    - _XRSwap: 0.01
+    - _XiaoRong: 1
+    m_Colors:
+    - _ClipRect: {r: -50000, g: -50000, b: 50000, a: 50000}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _DayNightVector: {r: 0, g: 0, b: 0, a: 0}
+    - _EdgeColor: {r: 1, g: 1, b: 0, a: 1}
+    - _HDRColor: {r: 1.6, g: 1.496, b: 1.463, a: 1}
+    - _InsideColor: {r: 1, g: 1, b: 0, a: 1}
+    - _MainTex_Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Nei_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _PointLightColor: {r: 0, g: 0, b: 0, a: 0}
+    - _PointLightPos: {r: 0, g: 0, b: 0, a: 0}
+    - _RimColor: {r: 0.514151, g: 0.7726834, b: 1, a: 1}
+    - _RimInnerColor: {r: 0.5884192, g: 0.43921566, b: 1, a: 1}
+    - _ScrollSpeed: {r: -3, g: 0.5, b: 0, a: 0}
+    - _TintColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+    - _Wind: {r: 1, g: 1, b: 1, a: 1}
+    - _WindEdgeFlutter: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
