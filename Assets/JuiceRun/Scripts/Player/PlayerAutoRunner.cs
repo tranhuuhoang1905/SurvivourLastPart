@@ -52,11 +52,11 @@ public class PlayerAutoRunner : MonoBehaviour
 
         if (isControll)
         {
-            if (Input.GetKey(KeyCode.A))
+            if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
             {
                 horizontalInput = -1f;
             }
-            else if (Input.GetKey(KeyCode.D))
+            else if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
             {
                 horizontalInput = 1f;
             }

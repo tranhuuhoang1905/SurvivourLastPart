@@ -16,7 +16,12 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 9da1150e3d7a70247834cda3b5b8a819
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 353b1bb16975bf142827d1b913e63120
+    m_Address: Player/player_0/Anim/upper
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 750aa24740d3d96449dbe479b9a50f9a, type: 2}
   m_SchemaSet:

@@ -109,6 +109,18 @@ PrefabInstance:
       value: Coin2
       objectReference: {fileID: 0}
     - target: {fileID: 457904, guid: fe6e5ea3e5455b143832a093a90124a3, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 457904, guid: fe6e5ea3e5455b143832a093a90124a3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 457904, guid: fe6e5ea3e5455b143832a093a90124a3, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 457904, guid: fe6e5ea3e5455b143832a093a90124a3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}

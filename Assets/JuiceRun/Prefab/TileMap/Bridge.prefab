@@ -60,6 +60,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: f27543eaea7dafd4890ebb524e5cf38e, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: a2ffad88b6bca1a4da41f568e807b421, type: 3}
     - target: {fileID: 919132149155446097, guid: f27543eaea7dafd4890ebb524e5cf38e, type: 3}
       propertyPath: m_Name
       value: Bridge

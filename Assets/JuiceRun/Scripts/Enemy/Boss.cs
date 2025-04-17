@@ -43,17 +43,12 @@ public class Boss : EnemyBase
     }
     protected override void BeginFloatingAndDestroy()
     {
-        
-        // animator.SetBool("Death", true);
-        // isMovingUp = true;
         StartCoroutine(DestroyAfterDelay(4f));
     }
     private IEnumerator DestroyAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
         var score = scoreService.GetScore();
-        Debug.Log($"check penalty:{penalty}");
-        Debug.Log($"check score:{score}");
         if (score>=penalty)
             {
                 GameEvents.TryWin();

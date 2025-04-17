@@ -5,9 +5,9 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
+    
+    private int level = 1;
 
-    [SerializeField] private GameObject countdownUI;
-    [SerializeField] private TMPro.TextMeshProUGUI countdownText;
 
     // public event Action<int> OnScoreChanged;
 
@@ -30,34 +30,26 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator CountdownToStart()
     {
-        ShowCountdownUI(true);
+        UIController.Instance.ShowCountdownUI(true);
 
         int countdown = 3;
         while (countdown > 0)
         {
-            UpdateCountdownText(countdown.ToString());
+            UIController.Instance.UpdateCountdownText(countdown.ToString());
+
             yield return new WaitForSecondsRealtime(1f);
             countdown--;
         }
 
-        UpdateCountdownText("Go!");
+        UIController.Instance.UpdateCountdownText("Go!");
+
         yield return new WaitForSecondsRealtime(1f);
 
-        ShowCountdownUI(false);
+        UIController.Instance.ShowCountdownUI(false);
         Time.timeScale = 1f;
         // StartGame();
     }
 
-    private void ShowCountdownUI(bool show)
-    {
-        if (countdownUI != null)
-            countdownUI.SetActive(show);
-    }
-
-    private void UpdateCountdownText(string text)
-    {
-        if (countdownText != null)
-            countdownText.text = text;
-    }
+    
 }
 
