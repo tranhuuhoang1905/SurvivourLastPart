@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -25,8 +26,8 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         Time.timeScale = 0f; // Pause toàn bộ game
-        StartCoroutine(CountdownToStart());
     }
+
 
     private IEnumerator CountdownToStart()
     {
@@ -50,6 +51,15 @@ public class GameManager : MonoBehaviour
         // StartGame();
     }
 
+    public void OnExitButtonReStartGame()
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.buildIndex);
+    }
     
+    public void OnExitButtonStartGame()
+    {
+        StartCoroutine(CountdownToStart());
+    }
 }
 

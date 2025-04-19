@@ -1,6 +1,5 @@
 using UnityEngine;
 using TMPro;
-using UnityEngine.SceneManagement;
 using DG.Tweening;
 using System.Collections;
 
@@ -71,11 +70,7 @@ public class UIController : MonoBehaviour
         panel.SetActive(true);
     }
 
-    public void OnExitButtonReStartGame()
-    {
-        Scene currentScene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(currentScene.buildIndex);
-    }
+    
 
     public void ShowCountdownUI(bool show)
     {
